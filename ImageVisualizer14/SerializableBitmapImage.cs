@@ -65,6 +65,9 @@ namespace ImageVisualizer
                     catch (FileNotFoundException)
                     {
                     }
+                    catch (ObjectDisposedException)
+                    {
+                    }
                 }
                 else if(string.Equals(i.Name, "Name", StringComparison.OrdinalIgnoreCase))
                 {
